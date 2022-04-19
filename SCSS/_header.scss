@@ -1,0 +1,81 @@
+header{
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 10rem;
+    color: $color-2;
+    a{
+        text-decoration: none;
+        color: $color-2;
+    }
+    .wrap{
+        display: flex;
+        padding: 0 0.6rem;
+    }
+    #logo{
+        width: 50px;
+        position: absolute;
+        top: 2.5%;
+        left: 2%;
+        pointer-events: none;
+    }
+    #wrap-1{
+        position: absolute;
+        top: 2%;
+        left: 10%;
+        #up-1{
+            position: absolute;
+            left: 92%;
+            top: 30%;
+            display: none;
+        }
+        #down-1{
+            position: absolute;
+            left: 92%;
+            top: 30%;
+        }
+    }
+    #wrap-2{
+        position: absolute;
+        top: 2%;
+        left: 22%;
+        #up-2{
+            position: absolute;
+            left: 92%;
+            top: 30%;
+            display: none
+        }
+        #down-2{
+            position: absolute;
+            left: 92%;
+            top: 30%;
+        }
+    }
+    nav{
+        position: absolute;
+        top: 2%;
+        left: 35%;
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            li{
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    span#login{
+        position: absolute;
+        right: 13%;
+        top: 2%;
+        @include name();
+    }
+    span#reg{
+        position: absolute;
+        right: 4%;
+        top: 2%;
+        @include name();
+    }
+}
